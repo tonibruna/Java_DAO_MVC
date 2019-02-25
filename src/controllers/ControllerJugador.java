@@ -1,3 +1,5 @@
+//popurri de mysql y mongo
+
 package controllers;
 
 
@@ -22,7 +24,8 @@ public class ControllerJugador {
 	public void create(Jugador jugador) {
 		JugadorDao dao = new JugadorDaoMySQLImp();
 		JugadorDao daoMongo = new JugadorDaoMongoDBImp();
-	//	dao.create(jugador);
+		
+	    //dao.create(jugador);
 		daoMongo.create(jugador);
 	}
 	
@@ -37,7 +40,7 @@ public class ControllerJugador {
 	}
 	
 	public void viewJugadores() {
-		/*
+		
 		List<Jugador> jugadores = new ArrayList<Jugador>();
 		JugadorDao dao = new JugadorDaoMySQLImp();
 		
@@ -45,12 +48,12 @@ public class ControllerJugador {
 		 jugadores = dao.read();
 		 vista.viewTodosJugadores(jugadores);
 		
-		*/
 		
-		JugadorDao daoMongo = new JugadorDaoMongoDBImp();
+		
+		/*JugadorDao daoMongo = new JugadorDaoMongoDBImp();
 		List<Jugador> jugadoresMongo = new ArrayList<Jugador>();
 		jugadoresMongo = daoMongo.read();
-		vista.viewTodosJugadores(jugadoresMongo);
+		vista.viewTodosJugadores(jugadoresMongo);*/
 		
 		
 	}

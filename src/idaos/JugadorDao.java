@@ -1,3 +1,5 @@
+//esta clase define las interfaces
+
 package idaos;
 
 import java.util.List;
